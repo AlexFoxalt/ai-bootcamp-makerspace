@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-# ai-bootcamp-makerspace
-=======
 ---
 title: BeyondChatGPT Demo
 emoji: 📉
