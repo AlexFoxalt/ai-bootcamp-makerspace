@@ -1,12 +1,9 @@
-# You can find this code for Chainlit python streaming here (https://docs.chainlit.io/concepts/streaming/python)
-
-# OpenAI Chat completion
-import os
-from openai import AsyncOpenAI  # importing openai for API usage
-import chainlit as cl  # importing chainlit for our app
-from chainlit.prompt import Prompt, PromptMessage  # importing prompt tools
+import chainlit as cl
 from chainlit.playground.providers import ChatOpenAI  # importing ChatOpenAI tools
+from chainlit.prompt import Prompt, PromptMessage  # importing prompt tools
 from dotenv import load_dotenv
+from openai import AsyncOpenAI  # importing openai for API usage
+
 
 load_dotenv()
 
@@ -45,9 +42,7 @@ async def main(message: cl.Message):
         provider=ChatOpenAI.id,
         messages=[
             PromptMessage(
-                role="system",
-                template=system_template,
-                formatted=system_template,
+                role="system", template=system_template, formatted=system_template
             ),
             PromptMessage(
                 role="user",

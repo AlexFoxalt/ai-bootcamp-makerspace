@@ -6,3 +6,5 @@ python-dotenv==1.0.0
 pydantic==2.10.1
 pandas
 matplotlib
+ruff==0.9.1
+mypy==1.14.1
