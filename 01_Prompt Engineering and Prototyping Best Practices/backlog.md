@@ -29,3 +29,5 @@ Please make adjustments to your application that you believe will improve the vi
 Steps that were made to achieve the goal:
 1. Upgrading LLM model to newest one
 2. Updating prompts (templates) to add some more clarity of what should be done
+
+Link to updated app: [HuggingFace](https://huggingface.co/spaces/AlexFoxalt/llm-app)
