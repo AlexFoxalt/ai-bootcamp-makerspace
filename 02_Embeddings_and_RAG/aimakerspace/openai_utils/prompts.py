@@ -50,7 +50,7 @@ class RolePrompt(BasePrompt):
         """
         if format:
             return {"role": self.role, "content": self.format_prompt(**kwargs)}
-        
+
         return {"role": self.role, "content": self.prompt}
 
 
