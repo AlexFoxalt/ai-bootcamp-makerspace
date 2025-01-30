@@ -1,3 +1,5 @@
+## Room 1
+
 #### Question #1:
 
 1. What other models could we use, and how would the above code change?
@@ -39,3 +41,37 @@ LangGraph's graph-based approach lets us visualize and manage complex flows natu
 Consider how you would modify the graph to handle these scenarios.
 
 ![alt text](Session%204%20Graph%20desing.drawio.png "Title")
+
+## Room 2
+
+#### Activity #2:
+- Advanced system prompt provided
+
+#### 🏗️ Activity #1:
+Include a screenshot of your trace and explain what it means.
+![LangSmith trace](Screenshot_LangSmith.png "Title")
+
+What we can get from trace:
+1. How many prompt tokens were processed
+2. `map:key` items shows our path through the chain
+3. We can see that there were 4 context items found in our vector DB
+4. If we go lower, we'll see final response generation
+5. Also, some additional info like billing, tags, time-to-execute, 
+
+#### Question #1 (Evaluation):
+What conclusions can you draw about the above results?
+![Evaluation 1](Screenshot_Eval_Case_1.png "Title")
+
+- So here we can see that our response was cool (dopeness - `Y`)
+- We also get max possible accuracy here, so we can say confidently that our expected output close to real one
+- But this case have some troubles with `cot` (Chains-Of-Thought) evaluation, it can be easy detected by analyzing output.
+
+Describe in your own words what the metrics are expressing.
+
+So I processed 3 eval. cases and the idea of this task became very clear for me really fast. 
+
+The idea of some custom evaluation, where we can design our self-built metrics and then test our app in incredibly smart.
+
+This service / dashboard provided by LangChain is very intuitive as for me, so I can draw conclusions about the success of my build very fast.
+
+The pre-built evaluators are also very important, so we can be sure that UX of our app will be on high level.
