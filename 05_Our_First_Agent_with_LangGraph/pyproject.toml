@@ -13,5 +13,6 @@ dependencies = [
     "langchain-community>=0.3.15",
     "langchain-openai>=0.3.2",
     "langgraph>=0.2.67",
+    "websockets>=14.2",
     "wikipedia>=1.4.0",
 ]
