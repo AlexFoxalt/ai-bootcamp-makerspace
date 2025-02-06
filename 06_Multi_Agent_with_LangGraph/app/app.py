@@ -113,6 +113,7 @@ async def process_chat(message: cl.Message):
                 await cl.Message(s).send()
     except GraphRecursionError:
         await cl.Message("Max recursion depth reached").send()
+    # todo: Not finished idea to return generated file to chat
     # response = cl.Message(content="")
     # for token in result:
     #     await response.stream_token(token)
