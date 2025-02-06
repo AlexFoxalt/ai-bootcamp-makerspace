@@ -1,0 +1,49 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36" version="26.0.10">
+  <diagram name="Page-1" id="lIt4_yxyUwvANK-UUYYY">
+    <mxGraphModel dx="1080" dy="712" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="XtP-7-Z59mlaVbZrERpu-6" value="1. USER QUERY" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="XtP-7-Z59mlaVbZrERpu-1" target="XtP-7-Z59mlaVbZrERpu-2">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="XtP-7-Z59mlaVbZrERpu-1" value="START" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="365" y="90" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="XtP-7-Z59mlaVbZrERpu-8" value="2. MADE DECISION:&lt;div&gt;SEARCH&lt;/div&gt;" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0.25;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="XtP-7-Z59mlaVbZrERpu-2" target="XtP-7-Z59mlaVbZrERpu-4">
+          <mxGeometry x="0.0013" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="XtP-7-Z59mlaVbZrERpu-13" value="4. MADE DECISION:&lt;div&gt;END&lt;/div&gt;" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="XtP-7-Z59mlaVbZrERpu-2" target="XtP-7-Z59mlaVbZrERpu-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="XtP-7-Z59mlaVbZrERpu-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.75;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;dashed=1;fillColor=#f5f5f5;strokeColor=#666666;" edge="1" parent="1" source="XtP-7-Z59mlaVbZrERpu-2" target="XtP-7-Z59mlaVbZrERpu-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="XtP-7-Z59mlaVbZrERpu-2" value="SUPERVISOR" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="350" y="250" width="150" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="XtP-7-Z59mlaVbZrERpu-3" value="PaperInformationRetriever" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="500" y="440" width="205" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="XtP-7-Z59mlaVbZrERpu-12" value="3. RETURN CONTEXT" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="XtP-7-Z59mlaVbZrERpu-4" target="XtP-7-Z59mlaVbZrERpu-2">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="100" y="480" />
+              <mxPoint x="100" y="290" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="XtP-7-Z59mlaVbZrERpu-4" value="Search" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="145" y="440" width="205" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="XtP-7-Z59mlaVbZrERpu-5" value="END" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="365" y="590" width="120" height="80" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
