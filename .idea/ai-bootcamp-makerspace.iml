@@ -1,8 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <module type="PYTHON_MODULE" version="4">
   <component name="NewModuleRootManager">
-    <content url="file://$MODULE_DIR$" />
-    <orderEntry type="jdk" jdkName="Python 3.11 virtualenv at ~/PycharmProjects/ai_bootcamp/ai-bootcamp-makerspace/.ve (2)" jdkType="Python SDK" />
+    <content url="file://$MODULE_DIR$">
+      <excludeFolder url="file://$MODULE_DIR$/05_Our_First_Agent_with_LangGraph/05_our_first_agent_with_langgraph.egg-info" />
+      <excludeFolder url="file://$MODULE_DIR$/05_Our_First_Agent_with_LangGraph/build" />
+    </content>
+    <orderEntry type="jdk" jdkName="Python 3.13 virtualenv at ~/PycharmProjects/ai_bootcamp/ai-bootcamp-makerspace/06_Multi_Agent_with_LangGraph/.venv" jdkType="Python SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
   </component>
 </module>
