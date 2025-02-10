@@ -1,6 +1,5 @@
 import asyncio
 import json
-import pdb
 import random
 from operator import itemgetter
 from uuid import uuid4
@@ -63,9 +62,9 @@ class CustomGraph:
 
         for chunk in tqdm(chunks, total=len(chunks), desc="Processing chunks"):
             c_id = str(uuid4())
-            c_summary = await self.aget_summary(chunk)
-            c_themes = await self.aget_themes(chunk)
-            c_persona = await self.aget_persona(chunk)
+            c_summary = await self._aget_summary(chunk)
+            c_themes = await self._aget_themes(chunk)
+            c_persona = await self._aget_persona(chunk)
 
             self.chunks.append(
                 {
@@ -109,21 +108,21 @@ class CustomGraph:
                 result.append(await function_to_call(random_chunk))
         return result
 
-    async def aget_summary(self, text: str) -> str:
+    async def _aget_summary(self, text: str) -> str:
         placeholder = str({"Input": {"text": text}})
         prompt = prompts.SUMMARIZATION_PROMPT.replace("<placeholder>", placeholder)
         chain = self.llm | JsonOutputParser()
         response = await chain.ainvoke(prompt)
         return response["text"]
 
-    async def aget_themes(self, text: str, max_num: int = 10) -> str:
+    async def _aget_themes(self, text: str, max_num: int = 10) -> str:
         placeholder = str({"Input": {"text": text, "max_num": max_num}})
         prompt = prompts.THEMES_PROMPT.replace("<placeholder>", placeholder)
         chain = self.llm | JsonOutputParser()
         response = await chain.ainvoke(prompt)
         return response["output"]
 
-    async def aget_persona(self, text: str) -> str:
+    async def _aget_persona(self, text: str) -> str:
         placeholder = str({"Input": {"text": text}})
         prompt = prompts.PERSONAS_PROMPT.replace("<placeholder>", placeholder)
         chain = self.llm | JsonOutputParser()
