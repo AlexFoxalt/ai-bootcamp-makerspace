@@ -16,8 +16,6 @@ Synthesizers and what do they generate:
 
 #### 🏗️ Activity #2:
 
-#### 🏗️ Activity #2:
-
 Highlight what each evaluator is evaluating.
 
 - `qa_evaluator`: this one is the simple comparing of what we expect and what we've got, so we can name it "correctness" check
