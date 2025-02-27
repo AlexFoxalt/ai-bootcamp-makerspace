@@ -1,5 +1,6 @@
 # 🏗️ Activity + Bonus
 Trace of RAG Fusion chain:
+
 ![img](media/RAG%20Fusion%20Chain.png)
 
 ## Setup
