@@ -1,4 +1,7 @@
 # 🏗️ Activity + Bonus
+Trace of RAG Fusion chain:
+![img](media/RAG%20Fusion%20Chain.png)
+
 ## Setup
 - Total documents: `100`
 - Chains LLM: `gpt-3.5-turbo`
