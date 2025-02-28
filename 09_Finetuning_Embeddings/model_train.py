@@ -22,9 +22,9 @@ embedding_model = SentenceTransformer(embedding_model_id)
 
 BATCH_SIZE = 64
 
-corpus = train_dataset['corpus']
-queries = train_dataset['questions']
-relevant_docs = train_dataset['relevant_contexts']
+corpus = train_dataset["corpus"]
+queries = train_dataset["questions"]
+relevant_docs = train_dataset["relevant_contexts"]
 
 examples = []
 for query_id, query in queries.items():
@@ -33,9 +33,7 @@ for query_id, query in queries.items():
     example = InputExample(texts=[query, text])
     examples.append(example)
 
-loader = DataLoader(
-    examples, batch_size=BATCH_SIZE
-)
+loader = DataLoader(examples, batch_size=BATCH_SIZE)
 
 matryoshka_dimensions = [768, 512, 256, 128, 64]
 inner_train_loss = MultipleNegativesRankingLoss(embedding_model)
@@ -43,9 +41,9 @@ train_loss = MatryoshkaLoss(
     embedding_model, inner_train_loss, matryoshka_dims=matryoshka_dimensions
 )
 
-corpus = val_dataset['corpus']
-queries = val_dataset['questions']
-relevant_docs = val_dataset['relevant_contexts']
+corpus = val_dataset["corpus"]
+queries = val_dataset["questions"]
+relevant_docs = val_dataset["relevant_contexts"]
 
 evaluator = InformationRetrievalEvaluator(queries, corpus, relevant_docs)
 
@@ -59,8 +57,8 @@ embedding_model.fit(
     train_objectives=[(loader, train_loss)],
     epochs=EPOCHS,
     warmup_steps=warmup_steps,
-    output_path='cities_optimized_embedding_model',
+    output_path="cities_optimized_embedding_model",
     show_progress_bar=True,
     evaluator=evaluator,
-    evaluation_steps=50
+    evaluation_steps=50,
 )
