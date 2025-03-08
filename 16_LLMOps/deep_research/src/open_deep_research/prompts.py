@@ -1,5 +1,5 @@
 # Prompt to generate search queries to help with planning the report
-report_planner_query_writer_instructions="""You are performing research for a report. 
+report_planner_query_writer_instructions = """You are performing research for a report. 
 
 <Report topic>
 {topic}
@@ -22,7 +22,7 @@ Make the queries specific enough to find high-quality, relevant sources while co
 """
 
 # Prompt to generate the report plan
-report_planner_instructions="""I want a plan for a report that is concise and focused.
+report_planner_instructions = """I want a plan for a report that is concise and focused.
 
 <Report topic>
 The topic of the report is:
@@ -71,7 +71,7 @@ Here is feedback on the report structure from review (if any):
 """
 
 # Query writer instructions
-query_writer_instructions="""You are an expert technical writer crafting targeted web search queries that will gather comprehensive information for writing a technical report section.
+query_writer_instructions = """You are an expert technical writer crafting targeted web search queries that will gather comprehensive information for writing a technical report section.
 
 <Report topic>
 {topic}
@@ -181,7 +181,7 @@ If the section content does not adequately address the section topic, generate {
 </format>
 """
 
-final_section_writer_instructions="""You are an expert technical writer crafting a section that synthesizes information from the rest of the report.
+final_section_writer_instructions = """You are an expert technical writer crafting a section that synthesizes information from the rest of the report.
 
 <Report topic>
 {topic}

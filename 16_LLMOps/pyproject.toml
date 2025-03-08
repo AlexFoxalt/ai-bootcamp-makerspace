@@ -16,4 +16,5 @@ dependencies = [
     "langsmith==0.1.121",
     "langchain-huggingface>=0.1.0",
     "jupyter>=1.1.1",
+    "chainlit>=2.2.1",
 ]
