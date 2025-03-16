@@ -5,7 +5,7 @@
       <excludeFolder url="file://$MODULE_DIR$/05_Our_First_Agent_with_LangGraph/05_our_first_agent_with_langgraph.egg-info" />
       <excludeFolder url="file://$MODULE_DIR$/05_Our_First_Agent_with_LangGraph/build" />
     </content>
-    <orderEntry type="jdk" jdkName="Python 3.13 virtualenv at ~/PycharmProjects/ai_bootcamp/ai-bootcamp-makerspace/08_Evaluating_RAG_With_Ragas/.venv" jdkType="Python SDK" />
+    <orderEntry type="jdk" jdkName="Python 3.9 virtualenv at ~/PycharmProjects/ai_bootcamp/ai-bootcamp-makerspace/16_LLMOps/.venv" jdkType="Python SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
   </component>
 </module>
